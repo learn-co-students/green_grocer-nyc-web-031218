@@ -280,7 +280,7 @@ describe "Grocer" do
 
 
 
-=begin
+
 
     describe "coupons:" do
 
@@ -336,6 +336,7 @@ describe "Grocer" do
         expect(checkout(cart, [])).to eq(117.00)
       end
     end
+=begin    
 =end
 
 
