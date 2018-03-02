@@ -57,23 +57,3 @@ def checkout(cart, coupons)
   end
   total > 100 ? (total * 0.90).round(2) : total
 end
-
-coupons = [
-  {:item => "CHEESE", :num => 3, :cost => 15.00},
-  {:item => "AVOCADO", :num => 2, :cost => 5.00},
-  {:item => "AVOCADO", :num => 2, :cost => 5.00}
-]
-items = [
-      {"AVOCADO" => {:price => 3.00, :clearance => true}},
-      {"KALE" => {:price => 3.00, :clearance => false}},
-      {"AVOCADO" => {:price => 3.00, :clearance => true}},
-      {"AVOCADO" => {:price => 3.00, :clearance => true}},
-      {"AVOCADO" => {:price => 3.00, :clearance => true}},
-      {"AVOCADO" => {:price => 3.00, :clearance => true}}
-    ]
-
-    result =  {
-      "AVOCADO"=>{:price=>3.0, :clearance=>true, :count=>5},
-      "KALE"=>{:price=>3.0, :clearance=>false, :count=>1}
-    }
-apply_coupons(result,coupons)
