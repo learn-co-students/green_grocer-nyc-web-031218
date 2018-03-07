@@ -313,6 +313,7 @@ describe "Grocer" do
         cart = Array.new(10, beer)
         expect(checkout(cart, [])).to eq(117.00)
       end
-    end
+    # end
   end
+end
 end
